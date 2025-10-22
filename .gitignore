@@ -1,0 +1,9 @@
+# Sanal Ortam Klasörü
+venv/
+# Python derleme dosyaları
+__pycache__/
+*.pyc
+# Streamlit klasörleri
+.streamlit/
+# Gemini API Anahtar Dosyası
+.env
