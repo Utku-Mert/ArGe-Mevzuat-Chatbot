@@ -44,3 +44,24 @@ Projeyi yalıtılmış bir ortamda çalıştırmak için bir sanal ortam oluştu
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 .\venv\Scripts\activate   # Windows
+```
+### Adım 3: Bağımlılıkların Kurulumu
+`requirements.txt` dosyasındaki gerekli Python paketlerini kurun:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Adım 4: API Anahtarını Tanımlama
+Google Gemini API Anahtarınızı (GEMINI_API_KEY) içeren bir .env dosyası oluşturun ve anahtarı içine yapıştırın:
+
+```bash
+# .env dosyası içeriği
+GEMINI_API_KEY="...SizinAPIAnahtarınız"
+```
+
+### Adım 5: Uygulamayı Çalıştırma
+Uygulamayı Streamlit ile çalıştırın. Her zaman run_app.py dosyasını kullanın:
+```bash
+streamlit run run_app.py
+```
